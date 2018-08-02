@@ -1,0 +1,25 @@
+{
+  "name": "geolocation-latlng",
+  "version": "0.1.0",
+  "description": "ES6 class to work with and format Geolocation API latitude and longitude",
+  "keywords": [
+    "geolocation",
+    "latlng",
+    "latitude",
+    "longitude",
+    "format",
+    "decimal",
+    "dsm"
+  ],
+  "homepage": "https://github.com/joelcolucci/geolocation-latlng",
+  "bugs": {
+    "url": "https://github.com/joelcolucci/geolocation-latlng/issues"
+  },
+  "main": "./lib/index.js",
+  "author": "Joel Colucci",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.2.0",
+    "eslint-config-google": "^0.9.1"
+  }
+}

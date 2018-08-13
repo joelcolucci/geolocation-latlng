@@ -47,15 +47,21 @@ describe('Coordinate toString instance method', () => {
   });
 
   test('toString - decimal degrees - dd', () => {
-    expect(true).toEqual(false);
+    let coordString = coord.toString('dd');
+
+    expect(coordString).toEqual('59.235° North');
   });
 
   test('toString - degrees, decimal minutes - ddm', () => {
-    expect(true).toEqual(false);
+    let coordString = coord.toString('ddm');
+
+    expect(coordString).toEqual(`59° 14.099' North`);
   });
 
   test('toString - degrees, minutes, seconds - dms', () => {
-    expect(true).toEqual(false);
+    let coordString = coord.toString('dms');
+
+    expect(coordString).toEqual(`59° 14' 6" North`);
   });
 });
 

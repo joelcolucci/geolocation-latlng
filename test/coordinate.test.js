@@ -1,10 +1,10 @@
 import { Coordinate } from '../lib/index';
 
-describe('Coordinate class', () => {
+describe('Coordinate properties', () => {
   let coord;
 
   beforeEach(() => {
-    coord = new Coordinate(59.2349887712);
+    coord = new Coordinate(59.2349887712, 'latitude');
   });
 
   test('degrees', () => {
@@ -24,9 +24,39 @@ describe('Coordinate class', () => {
 
     expect(seconds).toEqual(5.959576320004203);
   });
+
+  test('cardinalDirection', () => {
+    let cardinalDirection = coord.cardinalDirection;
+
+    expect(cardinalDirection).toEqual('North');
+  });
 });
 
 
-// getEastWestNorthSouth
-// toString()
+describe('Coordinate toString instance method', () => {
+  let coord;
+
+  beforeEach(() => {
+    coord = new Coordinate(59.2349887712, 'latitude');
+  });
+
+  test('toString - default - dd', () => {
+    let coordString = coord.toString();
+
+    expect(coordString).toEqual('59.235° North');
+  });
+
+  test('toString - decimal degrees - dd', () => {
+    expect(true).toEqual(false);
+  });
+
+  test('toString - degrees, decimal minutes - ddm', () => {
+    expect(true).toEqual(false);
+  });
+
+  test('toString - degrees, minutes, seconds - dms', () => {
+    expect(true).toEqual(false);
+  });
+});
+
 // toJson()

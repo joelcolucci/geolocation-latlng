@@ -1,6 +1,6 @@
 {
   "name": "geolocation-latlng",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "ES6 class to work with and format Geolocation API latitude and longitude",
   "keywords": [
     "geolocation",

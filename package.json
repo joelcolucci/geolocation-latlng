@@ -29,7 +29,7 @@
     "jest": "^23.5.0"
   },
   "dependencies": {
-    "geolocation-coordinate": "^0.1.1",
+    "geolocation-coordinate": "^0.1.3",
     "geolocation-distance-between": "^0.1.0"
   }
 }
